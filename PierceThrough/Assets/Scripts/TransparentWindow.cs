@@ -44,7 +44,7 @@ public class TransparentWindow : MonoBehaviour
         SetWindowPos(handle, -1, (int)screenPosition.x, (int)screenPosition.y, (int)screenPosition.width, (int)screenPosition.height, SWP_SHOWWINDOW);
 
         //把黑色透明化，不工作
-           SetLayeredWindowAttributes(handle, 0, 100, LWA_COLORKEY);
+        SetLayeredWindowAttributes(handle, 0, 100, LWA_COLORKEY);
 
        // 把整个窗口透明化，工作
        // SetLayeredWindowAttributes(handle, 0, 100, LWA_ALPHA);
